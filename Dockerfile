@@ -8,6 +8,4 @@ RUN pip install -r requirements.txt
 
 COPY main.py .
 
-COPY .env .
-
 CMD ["python", "./main.py"]

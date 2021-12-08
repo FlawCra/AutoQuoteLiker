@@ -1,7 +1,6 @@
 FROM python:3.10
 
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
-    && adduser --disabled-password --home /home/container container
+RUN adduser --disabled-password --home /home/container container
 
 USER container
 
